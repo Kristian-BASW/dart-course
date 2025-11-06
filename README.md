@@ -5,8 +5,9 @@ This is a course for learning dart and it's basic functionalities.
 ### Tutorial reading content
 
 
+- [ ]  [Types](#types)
 
-#### Types
+#### Types <a id="types"></a>
 
 All the types which are given by Dart, is already types we at some point know from other languages.
 
