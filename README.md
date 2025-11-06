@@ -2,6 +2,10 @@
 
 This is a course for learning dart and it's basic functionalities.
 
+### Tutorial reading content
+
+
+
 #### Types
 
 All the types which are given by Dart, is already types we at some point know from other languages.
@@ -18,6 +22,5 @@ All the types which are given by Dart, is already types we at some point know fr
 | double  | number     | double     |
 | num     | number     | int/double |
 | dynamic | any        | dynamic    |
-
 
 Nullables are defined just as in C# and typescript with a questionmark behind the type.
