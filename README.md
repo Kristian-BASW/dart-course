@@ -120,3 +120,4 @@ void create(Pet pet){
 ##### Main function
 
 In a Dart application the `main` function is the entry of the program.
+So this means if you make a lot functions and classes which are not used inside the `main` function, the code will never be used.
