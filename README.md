@@ -7,6 +7,7 @@ This is a course for learning dart and it's basic functionalities.
 - [Types](#types)
 - [Variables](#variables)
 - [Functions](#functions)
+- [Control flow](#control-flow)
 
 #### Types <a id="types"></a>
 
@@ -45,9 +46,7 @@ dynamic age = 'John';
 age = 1;
 ```
 
-
 ##### var
-
 
 Using `var` is being used just as in C#, where the compiler completes the infering of the object.
 In the example the compiler knows that this is a `String` and then automatically infers the type.
@@ -71,7 +70,6 @@ final String name = 'John Travolta';
 final name = 'John Travolta';
 ```
 
-
 ##### const
 
 The variable for a `const` must be computed when the application is being compiled, which means that the value cannot be changed when the application is running.
@@ -81,7 +79,6 @@ Const in Dart is similar to const in C#.
 const a = 1.2;
 const b = a + 2;
 ```
-
 
 ##### const and final differences
 
@@ -115,9 +112,52 @@ void create(Pet pet){
 }
 ```
 
-
-
 ##### Main function
 
 In a Dart application the `main` function is the entry of the program.
 So this means if you make a lot functions and classes which are not used inside the `main` function, the code will never be used.
+
+### Control flow <a id="control-flow"></a>
+
+##### Loops
+
+###### **for** loops
+
+For loops are just as in C# and typescript, you iterate through a list by initializing a variable (in the examples case it's i), and inside the curly brackets you do the action which you wanted to be executed.
+
+*Template*
+
+```dart
+for (start; <condition>; <increment>) {
+    action;
+}
+```
+
+*Example*
+
+```dart
+List<String> names = ['John', 'Bella', 'Michael', 'Kim'];
+// The looping
+for (int i = 0; i < names.length; i++) {
+  print(names[i]);
+}
+```
+
+###### **for-each** loops
+
+This is the most used loop, because it is more simple than the **for** loop.
+You can iterate through each element in a list without using an incrementer and a start.
+This is similar to the **for-each** loop which are in the C# programming language.
+
+*Example*
+
+```dart
+List<int> numbers = [1,2,4,10];
+// The looping
+for(var number in numbers){
+  print('$number');
+}
+```
+
+
+##### switch statement
